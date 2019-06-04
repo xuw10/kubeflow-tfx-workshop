@@ -79,7 +79,7 @@ mkdir -p /mnt/pipelineai/kubelet
 #iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
 
 # Note:  we need to do a dry-run to generate the /root/.pipelineai/cluster/yaml/ and /root/.pipelineai/kube/
-pipeline cluster-kube-install --tag 1.5.0 --chip=cpu --namespace=default --image-registry-url=954636985443.dkr.ecr.us-west-2.amazonaws.com --users-storage-gb=2000Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users --dry-run
+pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai1 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users --dry-run
 
 #cp /root/.pipelineai/kube/10-kubeadm.conf /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 sed -i '0,/\[Service\]/a Environment="KUBELET_EXTRA_ARGS=--root-dir=/mnt/pipelineai/kubelet --feature-gates=DevicePlugins=true,BlockVolume=true"' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
@@ -142,28 +142,40 @@ kubectl get pods --all-namespaces
 kubectl get secrets --all-namespaces
 
 # PipelineCLI
-export PIPELINE_CLI_VERSION=1.5.322
+export PIPELINE_CLI_VERSION=1.5.323
 pip install cli-pipeline==$PIPELINE_CLI_VERSION --ignore-installed --no-cache --upgrade
+
+export KSONNET_VERSION=0.13.1
+echo "export KSONNET_VERSION=$KSONNET_VERSION" >> /root/.bashrc
+echo "export KSONNET_VERSION=$KSONNET_VERSION" >> /etc/environment
+wget https://github.com/ksonnet/ksonnet/releases/download/v$KSONNET_VERSION/ks_$KSONNET_VERSION_linux_amd64.tar.gz
+tar -xzvf ks_$KSONNET_VERSION_linux_amd64.tar.gz
+mv ks_$KSONNET_VERSION_linux_amd64/ks /usr/bin/
+
+export KFCTL_VERSION=0.5.1
+echo "export KSONNET_VERSION=$KFCTL_VERSION" >> /root/.bashrc
+echo "export KSONNET_VERSION=$KFCTL_VERSION" >> /etc/environment
+wget https://github.com/kubeflow/kubeflow/releases/download/v$KFCTL_VERSION/kfctl_v$KFCTL_VERSION_linux.tar.gz
+tar -xzvf kfctl_v$KFCTL_VERSION_linux.tar.gz
+mv kfctl /usr/bin/
+
+apt install -y jq
+export KF_PIPELINES_VERSION=$(curl --silent https://api.github.com/repos/kubeflow/pipelines/releases/latest | jq -r .tag_name)
+echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /root/.bashrc
+echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /etc/environment
+pip install https://storage.googleapis.com/ml-pipeline/release/$KF_PIPELINES_VERSION/kfp.tar.gz --upgrade --no-cache --ignore-installed
 
 # Define PipelineAI Version/Tag
 export PIPELINE_VERSION=1.5.0
 echo "export PIPELINE_VERSION=$PIPELINE_VERSION" >> /root/.bashrc
 echo "export PIPELINE_VERSION=$PIPELINE_VERSION" >> /etc/environment
-
-# TODO:  THis doesn't fit on 10GB root disk
-wget https://github.com/ksonnet/ksonnet/releases/download/v0.13.1/ks_0.13.1_linux_amd64.tar.gz
-tar -xzvf ks_0.13.1_linux_amd64.tar.gz
-mv ks_0.13.1_linux_amd64/ks /usr/bin/
-
-wget https://github.com/kubeflow/kubeflow/releases/download/v0.5.1/kfctl_v0.5.1_linux.tar.gz
-tar -xzvf kfctl_v0.5.1_linux.tar.gz
-mv kfctl /usr/bin/
-
-pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=954636985443.dkr.ecr.us-west-2.amazonaws.com --users-storage-gb=2000Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
+pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai1 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
 export KFAPP=kubeflow-pipelineai
+echo "export KFAPP=$KFAPP" >> /root/.bashrc
+echo "export KFAPP=$KFAPP" >> /etc/environment
 # Default uses IAP.
-kfctl init --use_istio ${KFAPP}
+kfctl init --use_istio ${KFAPP} 
 cd ${KFAPP}
 kfctl generate all -V
 kfctl apply all -V
