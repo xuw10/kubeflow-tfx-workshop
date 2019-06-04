@@ -65,7 +65,7 @@ def taxi_cab_classification(
         vop = dsl.VolumeOp(
             name="create_pvc",
             resource_name="pipeline-pvc",
-            modes=dsl.VOLUME_MODE_RWM,
+            modes=dsl.VOLUME_MODE_RWO,
             size="1Gi"
         )
     
