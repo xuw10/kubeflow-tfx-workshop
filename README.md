@@ -1,1 +1,1 @@
-# kubeflow-tfx-workshop
+[Hands-on Learning with KubeFlow + Keras/TensorFlow 2.0 + TF Extended (TFX) + Kubernetes + Airflow + Jupyter](https://www.eventbrite.com/e/full-day-workshop-kubeflow-kerastensorflow-20-tf-extended-tfx-kubernetes-airflow-jupyter-tickets-62027635327)
