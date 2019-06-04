@@ -20,10 +20,10 @@
       artifactRepositoryKeyPrefix: 'artifacts',
       artifactRepositorySecretKeySecretKey: 'secretkey',
       artifactRepositorySecretKeySecretName: 'mlpipeline-minio-artifact',
-      executorImage: 'argoproj/argoexec:v2.2.0',
+      executorImage: 'argoproj/argoexec:v2.3.0-rc3',
       name: 'argo',
       uiImage: 'argoproj/argoui:v2.2.0',
-      workflowControllerImage: 'argoproj/workflow-controller:v2.2.0',
+      workflowControllerImage: 'argoproj/workflow-controller:v2.3.0-rc3',
     },
     centraldashboard: {
       image: 'gcr.io/kubeflow-images-public/centraldashboard:v0.5.0',

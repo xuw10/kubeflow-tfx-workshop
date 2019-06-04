@@ -1,7 +1,7 @@
 {
   // Parameters are intended to be late bound.
   params:: {
-    apiImage: "gcr.io/ml-pipeline/api-server:0.1.16",
+    apiImage: "gcr.io/arrikto/ml-pipeline-api-server:0.1.18-pick-1289",
     scheduledWorkflowImage: "gcr.io/ml-pipeline/scheduledworkflow:0.1.16",
     persistenceAgentImage: "gcr.io/ml-pipeline/persistenceagent:0.1.16",
     viewerCrdControllerImage: "gcr.io/ml-pipeline/viewer-crd-controller:0.1.16",

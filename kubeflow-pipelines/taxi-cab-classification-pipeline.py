@@ -62,19 +62,20 @@ def taxi_cab_classification(
     tf_server_name = 'taxi-cab-classification-model-{{workflow.uid}}'
 
     if platform != 'GCP':
-        vop = dsl.VolumeOp(
-            name="create_pvc",
-            resource_name="pipeline-pvc",
-            modes=dsl.VOLUME_MODE_RWO,
-            size="1Gi"
-        )
+#        vop = dsl.VolumeOp(
+#            name="create_pvc",
+#            resource_name="pipeline-pvc",
+#            modes=dsl.VOLUME_MODE_RWO,
+#            size="1Gi"
+#        )
     
-        checkout = dsl.ContainerOp(
-            name="checkout",
-            image="alpine/git:latest",
-            command=["git", "clone", "https://github.com/kubeflow/pipelines.git", str(output) + "/pipelines"],
-        ).apply(onprem.mount_pvc(vop.outputs["name"], 'local-storage', output))
-        checkout.after(vop)
+#        checkout = dsl.ContainerOp(
+#            name="checkout",
+#            image="alpine/git:latest",
+#            command=["git", "clone", "https://github.com/kubeflow/pipelines.git", str(output) + "/pipelines"],
+##        ).apply(onprem.mount_pvc(vop.outputs["name"], 'local-storage', output))
+#        ).apply(onprem.mount_pvc('users-pvc', 'local-storage', output))
+#        checkout.after(vop)
 
     validation = dataflow_tf_data_validation_op(
         inference_data=train,
@@ -150,7 +151,8 @@ def taxi_cab_classification(
         deploy = kubeflow_deploy_op(
             cluster_name=project,
             model_dir=str(training.output) + '/export/export',
-            pvc_name=vop.outputs["name"],
+            pvc_name='users-pvc',
+#            pvc_name=vop.outputs["name"],
             server_name=tf_server_name
         )
 
@@ -159,7 +161,8 @@ def taxi_cab_classification(
         if platform == 'GCP':
             step.apply(gcp.use_gcp_secret('user-gcp-sa'))
         else:
-            step.apply(onprem.mount_pvc(vop.outputs["name"], 'local-storage', output))
+            step.apply(onprem.mount_pvc('user-pvc', 'local-storage', output))
+#            step.apply(onprem.mount_pvc(vop.outputs["name"], 'local-storage', output))
 
 
 if __name__ == '__main__':
