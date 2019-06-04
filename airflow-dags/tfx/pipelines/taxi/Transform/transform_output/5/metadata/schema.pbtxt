@@ -1,0 +1,72 @@
+feature {
+  name: "company"
+  type: BYTES
+}
+feature {
+  name: "dropoff_census_tract"
+  type: FLOAT
+}
+feature {
+  name: "dropoff_community_area"
+  type: FLOAT
+}
+feature {
+  name: "dropoff_latitude"
+  type: FLOAT
+}
+feature {
+  name: "dropoff_longitude"
+  type: FLOAT
+}
+feature {
+  name: "fare"
+  type: FLOAT
+}
+feature {
+  name: "payment_type"
+  type: BYTES
+}
+feature {
+  name: "pickup_census_tract"
+  type: BYTES
+}
+feature {
+  name: "pickup_community_area"
+  type: INT
+}
+feature {
+  name: "pickup_latitude"
+  type: FLOAT
+}
+feature {
+  name: "pickup_longitude"
+  type: FLOAT
+}
+feature {
+  name: "tips"
+  type: FLOAT
+}
+feature {
+  name: "trip_miles"
+  type: FLOAT
+}
+feature {
+  name: "trip_seconds"
+  type: FLOAT
+}
+feature {
+  name: "trip_start_day"
+  type: INT
+}
+feature {
+  name: "trip_start_hour"
+  type: INT
+}
+feature {
+  name: "trip_start_month"
+  type: INT
+}
+feature {
+  name: "trip_start_timestamp"
+  type: INT
+}

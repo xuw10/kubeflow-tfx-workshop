@@ -1,0 +1,780 @@
+2019-06-03 23:31:48,125 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,125 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:31:48,185 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:31:48,185 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,675 - taxi: (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:CsvExampleGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:StatisticsGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:SchemaGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:ExampleValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:Transform (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:Trainer (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:Evaluator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:ModelValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi:Pusher (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:33:04,675 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,675 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,675 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,676 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,676 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,676 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:.0, ExampleStatisticsPath:.0]}
+2019-06-03 23:33:04,689 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,689 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:33:04,691 - taxi: (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:CsvExampleGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:StatisticsGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:SchemaGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:ExampleValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:Transform (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:Trainer (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:Evaluator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:ModelValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi:Pusher (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:33:04,691 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:33:04,691 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,691 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3]}
+2019-06-03 23:33:04,692 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:33:04,692 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,692 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.0, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.0]}
+2019-06-03 23:33:04,749 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:33:04,749 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,800 - taxi: (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:CsvExampleGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:StatisticsGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:SchemaGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:ExampleValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:Transform (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:Trainer (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:Evaluator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:ModelValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi:Pusher (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:34:35,800 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,800 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,801 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,801 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,801 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,801 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:.0]}
+2019-06-03 23:34:35,815 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,815 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:34:35,816 - taxi: (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:CsvExampleGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:StatisticsGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:SchemaGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:ExampleValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:Transform (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:Trainer (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:Evaluator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:ModelValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi:Pusher (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:34:35,816 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:34:35,816 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,816 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5]}
+2019-06-03 23:34:35,817 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:34:35,817 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,817 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.0]}
+2019-06-03 23:34:35,879 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:34:35,879 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,392 - taxi: (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:CsvExampleGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:StatisticsGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:SchemaGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:ExampleValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:Transform (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:Trainer (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:Evaluator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:ModelValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,392 - taxi:Pusher (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:00,393 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,393 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,393 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,393 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,394 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,394 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:.0]}
+2019-06-03 23:36:00,408 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,408 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:00,409 - taxi: (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:CsvExampleGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:StatisticsGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:SchemaGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:ExampleValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:Transform (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:Trainer (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:Evaluator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:ModelValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,409 - taxi:Pusher (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:00,410 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:00,410 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'stats': [ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/train/.4, ExampleStatisticsPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/StatisticsGen/output/2/eval/.5], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:00,410 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,410 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {}
+2019-06-03 23:36:00,411 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,411 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ExampleValidationPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ExampleValidator/output/4/.0]}
+2019-06-03 23:36:00,483 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:00,483 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,404 - taxi: (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:CsvExampleGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:StatisticsGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:SchemaGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:ExampleValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:Transform (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:Trainer (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:Evaluator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:ModelValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi:Pusher (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:36:01,404 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,404 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,405 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,405 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,405 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,405 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:.0], 'transformed_examples': [ExamplesPath:.0, ExamplesPath:.0]}
+2019-06-03 23:36:01,418 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,418 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:36:01,420 - taxi: (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:CsvExampleGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:StatisticsGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:SchemaGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:ExampleValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:Transform (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:Trainer (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:Evaluator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:ModelValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi:Pusher (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:36:01,420 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:36:01,420 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'input_data': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'schema': [SchemaPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/SchemaGen/output/3/.6]}
+2019-06-03 23:36:01,420 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,420 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'module_file': '/mnt/pipelineai/users/airflow-dags/taxi_utils.py'}
+2019-06-03 23:36:01,421 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,421 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'transform_output': [TransformPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transform_output/5/.0], 'transformed_examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/train/.0, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Transform/transformed_examples/5/eval/.0]}
+2019-06-03 23:36:01,532 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:36:01,532 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,405 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,405 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:37:57,468 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:37:57,468 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,876 - taxi: (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:CsvExampleGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:StatisticsGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:SchemaGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:ExampleValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:Transform (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:Trainer (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:Evaluator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:ModelValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,876 - taxi:Pusher (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:43:59,877 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,877 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,877 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,877 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,877 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:.0]}
+2019-06-03 23:43:59,890 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,890 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:43:59,892 - taxi: (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:CsvExampleGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:StatisticsGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:SchemaGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:ExampleValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:Transform (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:Trainer (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:Evaluator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:ModelValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi:Pusher (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:43:59,892 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,892 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:43:59,893 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'examples': [ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/train/.2, ExamplesPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/CsvExampleGen/examples/1/eval/.3], 'model_exports': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11]}
+2019-06-03 23:43:59,893 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,893 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'feature_slicing_spec': '{\n  "specs": [\n    {\n      "columnForSlicing": [\n        "trip_start_hour"\n      ]\n    }\n  ]\n}'}
+2019-06-03 23:43:59,894 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,894 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'output': [ModelEvalPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Evaluator/output/7/.0]}
+2019-06-03 23:43:59,980 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:43:59,980 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,435 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,435 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:44:00,522 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:44:00,522 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,628 - taxi: (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:CsvExampleGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:StatisticsGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:SchemaGen (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:ExampleValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:Transform (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:Trainer (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:Evaluator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:ModelValidator (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi:Pusher (base_driver.py:240) - INFO: Enter driver.
+2019-06-03 23:45:43,628 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,628 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,628 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,628 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,629 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,629 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:.0]}
+2019-06-03 23:45:43,684 - taxi: (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:CsvExampleGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:StatisticsGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:SchemaGen (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:ExampleValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:Transform (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:Trainer (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:Evaluator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:ModelValidator (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,684 - taxi:Pusher (base_driver.py:174) - INFO: Preparing new execution.
+2019-06-03 23:45:43,685 - taxi: (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:CsvExampleGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:StatisticsGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:SchemaGen (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:ExampleValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:Transform (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:Trainer (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:Evaluator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:ModelValidator (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi:Pusher (base_driver.py:244) - INFO: Prepared execution.
+2019-06-03 23:45:43,685 - taxi: (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:CsvExampleGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:StatisticsGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:SchemaGen (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:ExampleValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:Transform (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:Trainer (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:Evaluator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:ModelValidator (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi:Pusher (base_driver.py:92) - INFO: Starting BaseDriver driver.
+2019-06-03 23:45:43,685 - taxi: (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:CsvExampleGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:StatisticsGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:SchemaGen (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:ExampleValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:Transform (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:Trainer (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:Evaluator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:ModelValidator (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,685 - taxi:Pusher (base_driver.py:94) - INFO: Inputs for BaseDriver is: {'model_export': [ModelExportPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Trainer/output/6/.11], 'model_blessing': [ModelBlessingPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/ModelValidator/blessing/8/.12]}
+2019-06-03 23:45:43,686 - taxi: (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:CsvExampleGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:StatisticsGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:SchemaGen (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:ExampleValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:Transform (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:Trainer (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:Evaluator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:ModelValidator (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi:Pusher (base_driver.py:96) - INFO: Execution properties for BaseDriver is: {'push_destination': '{\n  "filesystem": {\n    "baseDirectory": "/mnt/pipelineai/users/airflow-dags/saved_models/taxi"\n  }\n}', 'custom_config': None}
+2019-06-03 23:45:43,686 - taxi: (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:CsvExampleGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:StatisticsGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:SchemaGen (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:ExampleValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:Transform (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:Trainer (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:Evaluator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:ModelValidator (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,686 - taxi:Pusher (base_driver.py:98) - INFO: Outputs for BaseDriver is: {'model_push': [ModelPushPath:/mnt/pipelineai/users/airflow-dags/tfx/pipelines/taxi/Pusher/model_push/9/.0]}
+2019-06-03 23:45:43,781 - taxi: (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:CsvExampleGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:StatisticsGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:SchemaGen (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:ExampleValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:Transform (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:Trainer (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:Evaluator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:ModelValidator (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
+2019-06-03 23:45:43,781 - taxi:Pusher (airflow_adapter.py:136) - INFO: No cached execution found. Starting executor.
