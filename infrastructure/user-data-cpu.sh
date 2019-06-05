@@ -173,15 +173,24 @@ pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VE
 
 pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
-export KFAPP=install-kubeflow
-echo "export KFAPP=$KFAPP" >> /root/.bashrc
-echo "export KFAPP=$KFAPP" >> /etc/environment
-# Default uses IAP.
-kfctl init --namespace=default --use_istio=true ${KFAPP} 
-cd ${KFAPP}
-kfctl generate all -V
+# Create
+cd /root/kubeflow-tfx-workshop/install-kubeflow/
 kfctl apply all -V
 
+# Create.orig
+#export KFAPP=install-kubeflow
+#echo "export KFAPP=$KFAPP" >> /root/.bashrc
+#echo "export KFAPP=$KFAPP" >> /etc/environment
+# Default uses IAP.
+#kfctl init --namespace=default --use_istio=true ${KFAPP}
+#cd ${KFAPP}
+#kfctl generate all -V
+
+# Delete
+#cd /root/kubeflow-tfx-workshop/install-kubeflow/ks_app
+#ks delete default
+
+# Delete.orig
 #cd ${KFAPP}
 #kfctl delete all
 #kfctl delete all --delete_storage
