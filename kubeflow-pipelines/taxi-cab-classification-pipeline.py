@@ -61,7 +61,7 @@ def taxi_cab_classification(
 
     tf_server_name = 'taxi-cab-classification-model-{{workflow.uid}}'
 
-    if platform != 'GCP':
+#    if platform != 'GCP':
 #        vop = dsl.VolumeOp(
 #            name="create_pvc",
 #            resource_name="pipeline-pvc",
@@ -86,8 +86,8 @@ def taxi_cab_classification(
         run_mode=mode,
         validation_output=output_template,
     )
-    if platform != 'GCP':
-        validation.after(checkout)
+#    if platform != 'GCP':
+#        validation.after(checkout)
 
     preprocess = dataflow_tf_transform_op(
         training_data_file_pattern=train,
