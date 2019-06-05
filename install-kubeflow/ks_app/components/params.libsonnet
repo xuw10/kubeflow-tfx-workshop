@@ -15,7 +15,7 @@
       artifactRepositoryAccessKeySecretKey: 'accesskey',
       artifactRepositoryAccessKeySecretName: 'mlpipeline-minio-artifact',
       artifactRepositoryBucket: 'mlpipeline',
-      artifactRepositoryEndpoint: 'minio-service.kubeflow:9000',
+      artifactRepositoryEndpoint: 'minio-service.default:9000',
       artifactRepositoryInsecure: 'true',
       artifactRepositoryKeyPrefix: 'artifacts',
       artifactRepositorySecretKeySecretKey: 'secretkey',
