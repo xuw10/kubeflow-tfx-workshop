@@ -85,8 +85,7 @@ def taxi_cab_classification(
         gcp_project=project,
         run_mode=mode,
         validation_output=output_template,
-#    )
-    ).apply(onprem.mount_pvc('users-pvc', 'local-storage', output))
+    )
 #    if platform != 'GCP':
 #        validation.after(checkout)
 
