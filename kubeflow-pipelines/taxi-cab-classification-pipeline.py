@@ -38,18 +38,18 @@ kubeflow_deploy_op              = components.load_component_from_url('https://ra
   description='Example pipeline that does classification with model analysis based on a public BigQuery dataset.'
 )
 def taxi_cab_classification(
-    output='/mnt/pipelineai/users',
+    output='/mnt',
     project='taxi-cab-classification-pipeline',
 #    column_names='gs://ml-pipeline-playground/tfx/taxi-cab-classification/column-names.json',
-    column_names='/mnt/pipelineai/users/kubeflow-pipelines/column-names.json',
+    column_names='/mnt/kubeflow-pipelines/column-names.json',
     key_columns='trip_start_timestamp',
 #    train='gs://ml-pipeline-playground/tfx/taxi-cab-classification/train.csv',
-    train='/mnt/pipelineai/users/kubeflow-pipelines/train.csv',
+    train='/mnt/kubeflow-pipelines/train.csv',
 #    evaluation='gs://ml-pipeline-playground/tfx/taxi-cab-classification/eval.csv',
-    evaluation='/mnt/pipelineai/users/kubeflow-pipelines/eval.csv',
+    evaluation='/mnt/kubeflow-pipelines/eval.csv',
     mode='local',
 #    preprocess_module='gs://ml-pipeline-playground/tfx/taxi-cab-classification/preprocessing.py',
-    preprocess_module='/mnt/pipelineai/users/kubeflow-pipelines/preprocessing.py',
+    preprocess_module='/mnt/kubeflow-pipelines/preprocessing.py',
     learning_rate=0.1,
     hidden_layer_size='1500',
     steps=3000,
