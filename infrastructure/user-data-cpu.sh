@@ -185,6 +185,7 @@ kfctl apply all -V
 #kfctl init --namespace=default --use_istio=true ${KFAPP}
 #cd ${KFAPP}
 #kfctl generate all -V
+#kfctl apply all -V
 
 # Delete
 #cd /root/kubeflow-tfx-workshop/install-kubeflow/ks_app
