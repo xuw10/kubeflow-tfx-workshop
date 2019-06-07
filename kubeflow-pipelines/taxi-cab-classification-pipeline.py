@@ -39,8 +39,8 @@ kubeflow_deploy_op              = components.load_component_from_url('https://ra
 )
 def taxi_cab_classification(
 #    output='minio://minio-service:9000/blah/',
-    output='gs://pipelineai-kubeflow/blah',
-#    output='/mnt',
+#    output='gs://pipelineai-kubeflow/blah',
+    output='/mnt',
     project='taxi-cab-classification-pipeline',
 #    column_names='gs://ml-pipeline-playground/tfx/taxi-cab-classification/column-names.json',
     column_names='/mnt/kubeflow-pipelines/column-names.json',
