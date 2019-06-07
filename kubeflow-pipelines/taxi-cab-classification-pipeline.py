@@ -153,7 +153,8 @@ def taxi_cab_classification(
             model_dir=str(training.output) + '/export/export',
             pvc_name='users-pvc',
 #            pvc_name=vop.outputs["name"],
-            server_name=tf_server_name
+            server_name=tf_server_name,
+            service_type='NodePort',
         )
 
     steps = [validation, preprocess, training, analysis, prediction, cm, roc, deploy]
