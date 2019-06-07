@@ -5,7 +5,7 @@
     // Each object below should correspond to a component in the components/ directory
     ambassador: {
       ambassadorImage: 'quay.io/datawire/ambassador:0.37.0',
-      ambassadorNodePort: 0,
+      ambassadorNodePort: 31111,
       ambassadorServiceType: 'NodePort',
       name: 'ambassador',
       platform: 'none',
@@ -15,15 +15,15 @@
       artifactRepositoryAccessKeySecretKey: 'accesskey',
       artifactRepositoryAccessKeySecretName: 'mlpipeline-minio-artifact',
       artifactRepositoryBucket: 'mlpipeline',
-      artifactRepositoryEndpoint: 'minio-service.default:9000',
+      artifactRepositoryEndpoint: 'minio-service.kubeflow:9000',
       artifactRepositoryInsecure: 'true',
       artifactRepositoryKeyPrefix: 'artifacts',
       artifactRepositorySecretKeySecretKey: 'secretkey',
       artifactRepositorySecretKeySecretName: 'mlpipeline-minio-artifact',
-      executorImage: 'argoproj/argoexec:v2.3.0-rc3',
+      executorImage: 'argoproj/argoexec:v2.3.0',
       name: 'argo',
-      uiImage: 'argoproj/argoui:v2.2.0',
-      workflowControllerImage: 'argoproj/workflow-controller:v2.3.0-rc3',
+      uiImage: 'argoproj/argoui:v2.3.0',
+      workflowControllerImage: 'argoproj/workflow-controller:v2.3.0',
     },
     centraldashboard: {
       image: 'gcr.io/kubeflow-images-public/centraldashboard:v0.5.0',

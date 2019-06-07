@@ -2,7 +2,7 @@ apiVersion: 0.3.0
 environments:
   default:
     destination:
-      namespace: default
+      namespace: kubeflow
       server: https://10.128.0.4:6443
     k8sVersion: v1.14.2
     path: default

@@ -3,13 +3,15 @@ kind: KfDef
 metadata:
   creationTimestamp: null
   name: install-kubeflow
-  namespace: default
+  namespace: kubeflow
 spec:
   appdir: /root/kubeflow-tfx-workshop/install-kubeflow
   componentParams:
     ambassador:
     - name: ambassadorServiceType
       value: NodePort
+    - name: ambassadorNodePort
+      value: "31111"
   components:
   - ambassador
   - argo

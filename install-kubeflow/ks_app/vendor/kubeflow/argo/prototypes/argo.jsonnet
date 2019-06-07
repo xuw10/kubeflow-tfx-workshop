@@ -3,11 +3,11 @@
 // @description Deploy Argo workflow engine
 // @shortDescription Argo workflow engine
 // @param name string Name to give to the component
-// @optionalParam workflowControllerImage string argoproj/workflow-controller:v2.3.0-rc3 workflowControllerImage
-// @optionalParam uiImage string argoproj/argoui:v2.2.0 uiImage
-// @optionalParam executorImage string argoproj/argoexec:v2.3.0-rc3 executorImage
+// @optionalParam workflowControllerImage string argoproj/workflow-controller:v2.3.0 workflowControllerImage
+// @optionalParam uiImage string argoproj/argoui:v2.3.0 uiImage
+// @optionalParam executorImage string argoproj/argoexec:v2.3.0 executorImage
 // @optionalParam artifactRepositoryKeyPrefix string artifacts artifactRepositoryKeyPrefix
-// @optionalParam artifactRepositoryEndpoint string minio-service.default:9000 artifactRepositoryEndpoint
+// @optionalParam artifactRepositoryEndpoint string minio-service.kubeflow:9000 artifactRepositoryEndpoint
 // @optionalParam artifactRepositoryBucket string mlpipeline artifactRepositoryBucket
 // @optionalParam artifactRepositoryInsecure string true artifactRepositoryInsecure
 // @optionalParam artifactRepositoryAccessKeySecretName string mlpipeline-minio-artifact artifactRepositoryAccessKeySecretName
