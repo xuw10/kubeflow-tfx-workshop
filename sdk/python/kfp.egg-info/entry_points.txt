@@ -1,0 +1,4 @@
+[console_scripts]
+dsl-compile = kfp.compiler.main:main
+kfp = kfp.__main__:main
+

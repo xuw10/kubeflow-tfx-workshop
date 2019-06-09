@@ -66,6 +66,19 @@ def taxi_cab_classification(
 
     tf_server_name = 'taxi-cab-classification-model-{{workflow.uid}}'
 
+
+
+    pipeline_artifact_location = dsl.ArtifactLocation.s3(
+        bucket='mybucket',
+        endpoint="minio-service.kubeflow:9000",  # parameterize minio-service endpoint
+        insecure=True,
+        access_key_secret={"name": "mlpipeline-minio-artifact"," key": "accesskey"},
+        secret_key_secret={"name": "mlpipeline-minio-artifact", "key": "secretkey"},  # accepts dict also
+    )
+
+    # set pipeline level artifact location
+    dsl.get_pipeline_conf().set_artifact_location(pipeline_artifact_location)
+
 #    if platform != 'GCP':
 #        vop = dsl.VolumeOp(
 #            name="create_pvc",
