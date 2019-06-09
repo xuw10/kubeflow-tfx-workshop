@@ -23,7 +23,7 @@ from kubernetes.client import V1SecretKeySelector
     location for all the ops in the pipeline.""",
 )
 def custom_artifact_location(
-    tag: str, namespace: str = "kubeflow", bucket: str = "somebucket"
+    tag: str, namespace: str = "kubeflow", bucket: str = "mybucket"
 ):
 
     # configures artifact location
