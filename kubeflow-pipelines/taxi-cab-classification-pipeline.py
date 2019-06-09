@@ -58,23 +58,21 @@ def taxi_cab_classification(
     analyze_slice_column='trip_start_hour'
 ):
     # Note:  This needs to be gs:// if we want ROC and Confusion Matrix to work
-#    output_template = 'gs://pipelineai-kubeflow' + '/{{workflow.uid}}/{{pod.name}}/data'
-    output_template = 's3://mybucket' + '/{{workflow.uid}}/{{pod.name}}/data'
+    output_template = 'gs://pipelineai-kubeflow' + '/{{workflow.uid}}/{{pod.name}}/data'
+#    output_template = 's3://mybucket' + '/{{workflow.uid}}/{{pod.name}}/data'
     # output_template = str(output) + '/{{workflow.uid}}/{{pod.name}}/data'
     target_lambda = """lambda x: (x['target'] > x['fare'] * 0.2)"""
     target_class_lambda = """lambda x: 1 if (x['target'] > x['fare'] * 0.2) else 0"""
 
     tf_server_name = 'taxi-cab-classification-model-{{workflow.uid}}'
 
-
-
-    pipeline_artifact_location = dsl.ArtifactLocation.s3(
-        bucket='mybucket',
-        endpoint="minio-service.kubeflow:9000",  # parameterize minio-service endpoint
-        insecure=True,
-        access_key_secret={"name": "mlpipeline-minio-artifact"," key": "accesskey"},
-        secret_key_secret={"name": "mlpipeline-minio-artifact", "key": "secretkey"},  # accepts dict also
-    )
+#    pipeline_artifact_location = dsl.ArtifactLocation.s3(
+#        bucket='mybucket',
+#        endpoint="minio-service.kubeflow:9000",  # parameterize minio-service endpoint
+#        insecure=True,
+#        access_key_secret={"name": "mlpipeline-minio-artifact"," key": "accesskey"},
+#        secret_key_secret={"name": "mlpipeline-minio-artifact", "key": "secretkey"},  # accepts dict also
+#    )
 
     # set pipeline level artifact location
     dsl.get_pipeline_conf().set_artifact_location(pipeline_artifact_location)
