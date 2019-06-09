@@ -31,8 +31,8 @@ def custom_artifact_location(
         bucket=bucket,
         endpoint="minio-service.%s:9000" % namespace,  # parameterize minio-service endpoint
         insecure=True,
-        access_key_secret=V1SecretKeySelector(name="minio", key="accesskey"),
-        secret_key_secret={"name": "minio", "key": "minio123"},  # accepts dict also
+        access_key_secret=V1SecretKeySelector(name="mlpipeline-minio-artifact", key="accesskey"),
+        secret_key_secret={"name": "mlpipeline-minio-artifact", "key": "minio123"},  # accepts dict also
     )
 
     # set pipeline level artifact location
