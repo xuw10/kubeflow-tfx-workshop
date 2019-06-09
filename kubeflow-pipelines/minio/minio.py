@@ -23,7 +23,9 @@ from kubernetes.client import V1SecretKeySelector
     location for all the ops in the pipeline.""",
 )
 def custom_artifact_location(
-        tag: str = "latest", namespace: str = "kubeflow", bucket: str = "mybucket"
+        tag: str = "latest", 
+        namespace: str = "kubeflow", 
+        bucket: str = "mybucket"
 ):
 
     # configures artifact location
@@ -31,7 +33,7 @@ def custom_artifact_location(
         bucket=bucket,
         endpoint="minio-service.%s:9000" % namespace,  # parameterize minio-service endpoint
         insecure=True,
-        access_key_secret={"name": "mlpipeline-minio-artifact", "key": "accesskey"},
+        access_key_secret=V1SecretKeySelector(name="mlpipeline-minio-artifact", key="accesskey"),
         secret_key_secret={"name": "mlpipeline-minio-artifact", "key": "secretkey"},  # accepts dict also
     )
 
