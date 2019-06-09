@@ -58,7 +58,7 @@ def taxi_cab_classification(
     analyze_slice_column='trip_start_hour'
 ):
     # Note:  This needs to be gs:// if we want ROC and Confusion Matrix to work
-    output_template = 'gs://pipelineai-kubeflow' + '/taxi/{{workflow.uid}}/{{pod.name}}/data'
+    output_template = 'gs://pipelineai-kubeflow/taxi/{{workflow.uid}}/{{pod.name}}/data'
 #    output_template = 's3://mybucket' + '/{{workflow.uid}}/{{pod.name}}/data'
     # output_template = str(output) + '/{{workflow.uid}}/{{pod.name}}/data'
     target_lambda = """lambda x: (x['target'] > x['fare'] * 0.2)"""
