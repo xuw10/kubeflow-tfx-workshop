@@ -26,7 +26,7 @@
       workflowControllerImage: 'argoproj/workflow-controller:v2.3.0',
     },
     centraldashboard: {
-      image: 'gcr.io/kubeflow-images-public/centraldashboard:v0.5.0',
+      image: 'pipelineai/centraldashboard:1.5.0',
       name: 'centraldashboard',
     },
     "jupyter-web-app": {
