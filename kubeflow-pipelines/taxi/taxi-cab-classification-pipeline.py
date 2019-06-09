@@ -43,22 +43,22 @@ def taxi_cab_classification(
     output='/mnt',
     project='taxi-cab-classification-pipeline',
 #    column_names='gs://ml-pipeline-playground/tfx/taxi-cab-classification/column-names.json',
-    column_names='/mnt/kubeflow-pipelines/column-names.json',
+    column_names='/mnt/kubeflow-pipelines/taxi/column-names.json',
     key_columns='trip_start_timestamp',
 #    train='gs://ml-pipeline-playground/tfx/taxi-cab-classification/train.csv',
-    train='/mnt/kubeflow-pipelines/train.csv',
+    train='/mnt/kubeflow-pipelines/taxi/train.csv',
 #    evaluation='gs://ml-pipeline-playground/tfx/taxi-cab-classification/eval.csv',
-    evaluation='/mnt/kubeflow-pipelines/eval.csv',
+    evaluation='/mnt/kubeflow-pipelines/taxi/eval.csv',
     mode='local',
 #    preprocess_module='gs://ml-pipeline-playground/tfx/taxi-cab-classification/preprocessing.py',
-    preprocess_module='/mnt/kubeflow-pipelines/preprocessing.py',
+    preprocess_module='/mnt/kubeflow-pipelines/taxi/preprocessing.py',
     learning_rate=0.1,
     hidden_layer_size='1500',
     steps=3000,
     analyze_slice_column='trip_start_hour'
 ):
     # Note:  This needs to be gs:// if we want ROC and Confusion Matrix to work
-    output_template = 'gs://pipelineai-kubeflow' + '/{{workflow.uid}}/{{pod.name}}/data'
+    output_template = 'gs://pipelineai-kubeflow' + '/taxi/{{workflow.uid}}/{{pod.name}}/data'
 #    output_template = 's3://mybucket' + '/{{workflow.uid}}/{{pod.name}}/data'
     # output_template = str(output) + '/{{workflow.uid}}/{{pod.name}}/data'
     target_lambda = """lambda x: (x['target'] > x['fare'] * 0.2)"""
@@ -73,9 +73,8 @@ def taxi_cab_classification(
 #        access_key_secret={"name": "mlpipeline-minio-artifact"," key": "accesskey"},
 #        secret_key_secret={"name": "mlpipeline-minio-artifact", "key": "secretkey"},  # accepts dict also
 #    )
-
-    # set pipeline level artifact location
-    dsl.get_pipeline_conf().set_artifact_location(pipeline_artifact_location)
+#    # set pipeline level artifact location
+#    dsl.get_pipeline_conf().set_artifact_location(pipeline_artifact_location)
 
 #    if platform != 'GCP':
 #        vop = dsl.VolumeOp(
