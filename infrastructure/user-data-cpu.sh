@@ -121,6 +121,7 @@ kubectl create -f https://openebs.github.io/charts/openebs-operator-0.9.0.yaml
 sleep 5
 
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+sleep 5
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 
 # Tab Completion
