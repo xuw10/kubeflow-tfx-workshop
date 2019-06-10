@@ -174,7 +174,8 @@ pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VE
 pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
 # Create kubeflow assets
-cd /root && git clone https://github.com/PipelineAI/kubeflow-tfx-workshop
+cd /root 
+git clone https://github.com/PipelineAI/kubeflow-tfx-workshop
 cd /root/kubeflow-tfx-workshop/install-kubeflow/
 kfctl apply all -V
 
@@ -184,7 +185,6 @@ kubectl create -f /root/.pipelineai/cluster/yaml/.generated-users-kubeflow-pvc.y
 # TODO:  Create user-gcp-sa secret
 kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
 
-# TODO:  Setup nginx
 # Nginx
 apt-get install -y nginx
 
@@ -195,13 +195,18 @@ cd /etc/nginx/sites-available/ && ln -s /root/kubeflow-tfx-workshop/infrastructu
 cd /etc/nginx/sites-enabled/ && ln -s /etc/nginx/sites-available/pipelineai-nginx.conf
 cd /root
 
-# HTML
-cd /root
-cp -R /root/product/html/* /var/www/html/
-
 # Nginx (Restart for Good Measure)
 service nginx start
 service nginx restart
+
+# TODO:  Redis
+#kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+
+# TODO:  MySql
+#kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+
+# TODO:  Copy kubeflow-pipelines/ data to PVC (note:  this requirs that something is *bound* to the PVC, otherwise it's in Pending state!
+
 
 # Create.orig
 #export KFAPP=install-kubeflow
