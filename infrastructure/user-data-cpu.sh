@@ -173,9 +173,35 @@ pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VE
 
 pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
-# Create
+# Create kubeflow assets
+cd /root && git clone https://github.com/PipelineAI/kubeflow-tfx-workshop
 cd /root/kubeflow-tfx-workshop/install-kubeflow/
 kfctl apply all -V
+
+# TODO:  Create users-pvc in kubeflow namespace!
+kubectl create -f /root/.pipelineai/cluster/yaml/.generated-users-kubeflow-pvc.yaml
+
+# TODO:  Create user-gcp-sa secret
+kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
+
+# TODO:  Setup nginx
+# Nginx
+apt-get install -y nginx
+
+# Nginx Config
+rm /etc/nginx/sites-available/default
+rm /etc/nginx/sites-enabled/default
+cd /etc/nginx/sites-available/ && ln -s /root/kubeflow-tfx-workshop/infrastructure/config/nginx/pipelineai-nginx.conf
+cd /etc/nginx/sites-enabled/ && ln -s /etc/nginx/sites-available/pipelineai-nginx.conf
+cd /root
+
+# HTML
+cd /root
+cp -R /root/product/html/* /var/www/html/
+
+# Nginx (Restart for Good Measure)
+service nginx start
+service nginx restart
 
 # Create.orig
 #export KFAPP=install-kubeflow
@@ -191,7 +217,9 @@ kfctl apply all -V
 #cd /root/kubeflow-tfx-workshop/install-kubeflow/ks_app
 #ks delete default
 
-# Delete.orig
+# THIS MIGHT CAUSE THE kubeflow NAMESPACE TO HANG DURING TERMINATION
+# DELETE ENTIRE NAMESPACE INCLUDING PVC's!!!
 #cd ${KFAPP}
+# This also deletes PVC's
 #kfctl delete all
 #kfctl delete all --delete_storage
