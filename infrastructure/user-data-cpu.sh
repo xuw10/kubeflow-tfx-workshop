@@ -89,7 +89,7 @@ echo "export PIPELINE_VERSION=$PIPELINE_VERSION" >> /root/.bashrc
 echo "export PIPELINE_VERSION=$PIPELINE_VERSION" >> /etc/environment
 
 # Note:  we need to do a dry-run to generate the /root/.pipelineai/cluster/yaml/ and /root/.pipelineai/kube/
-pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users --dry-run
+pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=kubeflow --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users --dry-run
 
 #cp /root/.pipelineai/kube/10-kubeadm.conf /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 sed -i '0,/\[Service\]/a Environment="KUBELET_EXTRA_ARGS=--root-dir=/mnt/pipelineai/kubelet --feature-gates=DevicePlugins=true,BlockVolume=true"' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
@@ -115,6 +115,11 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 
 sleep 5
 
+# Set Default Namespace
+kubectl config set-context \
+    $(kubectl config current-context) \
+    --namespace kubeflow
+
 # OpenEBS CRD/Operator and StorageClass
 kubectl create -f https://openebs.github.io/charts/openebs-operator-0.9.0.yaml
 
@@ -127,11 +132,6 @@ kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass
 # Tab Completion
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 source ~/.bashrc
-
-# Set Default Namespace
-kubectl config set-context \
-    $(kubectl config current-context) \
-    --namespace default
 
 # Install AWS CLI
 pip install awscli
@@ -172,7 +172,7 @@ echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /root/.bashrc
 echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /etc/environment
 pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VERSION}/kfp.tar.gz --upgrade --no-cache --ignore-installed
 
-pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=default --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
+pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=kubeflow --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
 # Create kubeflow assets
 cd /root 
@@ -181,7 +181,7 @@ cd /root/kubeflow-tfx-workshop/install-kubeflow/
 kfctl apply all -V
 
 # TODO:  Create users-pvc in kubeflow namespace!
-kubectl create -f /root/.pipelineai/cluster/yaml/.generated-users-kubeflow-pvc.yaml
+#kubectl create -f /root/.pipelineai/cluster/yaml/.generated-users-kubeflow-pvc.yaml
 
 # TODO:  Create user-gcp-sa secret
 kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
