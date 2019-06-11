@@ -208,6 +208,11 @@ service nginx restart
 
 # TODO:  Copy kubeflow-pipelines/ data to PVC (note:  this requirs that something is *bound* to the PVC, otherwise it's in Pending state!
 
+# TODO:  Istio - Label the namespace
+kubectl label namespace kubeflow istio-injection=enabled
+#/root/.pipelineai/cluster/yaml/.generated-istio-crds.yaml
+#/root/.pipelineai/cluster/yaml/.generated-istio-noauth.yaml
+#/root/.pipelineai/cluster/yaml/.generated-virtualservice-grafana.yaml
 
 # Create.orig
 #export KFAPP=install-kubeflow
