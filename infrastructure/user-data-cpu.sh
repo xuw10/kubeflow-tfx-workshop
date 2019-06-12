@@ -118,6 +118,8 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 
 sleep 5
 
+kubectl create namespace kubeflow
+
 # Set Default Namespace
 kubectl config set-context \
     $(kubectl config current-context) \
@@ -125,36 +127,21 @@ kubectl config set-context \
 
 # OpenEBS CRD/Operator and StorageClass
 kubectl create -f https://openebs.github.io/charts/openebs-operator-0.9.0.yaml
-sleep 5
+sleep 10
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-sleep 5
+sleep 10
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-
-# Tab Completion
-echo "source <(kubectl completion bash)" >> ~/.bashrc
-source ~/.bashrc
-
-# Install AWS CLI
-#pip install awscli
-#aws ecr get-login --region=us-west-2 --no-include-email | bash
-
-# Install GCP gcloud
-CLOUD_SDK_REPO="cloud-sdk-$(grep VERSION_CODENAME /etc/os-release | cut -d '=' -f 2)"
-echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-apt-get update && apt-get install -y google-cloud-sdk
-
-# Install APIs for TPUs (Optional)
-pip install --upgrade google-api-python-client
-pip install --upgrade oauth2client
-
-kubectl create secret generic docker-registry-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
+sleep 10 
+kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+sleep 10
+kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 
 # Istio - Label the namespace
 kubectl label namespace kubeflow istio-injection=enabled
 
-kubectl get pods --all-namespaces
-kubectl get secrets --all-namespaces
+# Tab Completion
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+source ~/.bashrc
 
 export KSONNET_VERSION=0.13.1
 echo "export KSONNET_VERSION=$KSONNET_VERSION" >> /root/.bashrc
@@ -170,13 +157,12 @@ wget https://github.com/kubeflow/kubeflow/releases/download/v${KFCTL_VERSION}/kf
 tar -xzvf kfctl_v${KFCTL_VERSION}_linux.tar.gz
 mv kfctl /usr/bin/
 
-apt install -y jq
-# $(curl --silent https://api.github.com/repos/kubeflow/pipelines/releases/latest | jq -r .tag_name)
 export KF_PIPELINES_VERSION=0.1.21
 echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /root/.bashrc
 echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /etc/environment
 pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VERSION}/kfp.tar.gz --upgrade --no-cache --ignore-installed
 
+# Install PipelineAI
 pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=kubeflow --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
 # Create kubeflow assets
@@ -185,11 +171,35 @@ git clone https://github.com/PipelineAI/kubeflow-tfx-workshop
 cd /root/kubeflow-tfx-workshop/install-kubeflow/
 kfctl apply all -V
 
-# TODO:  Create users-pvc in kubeflow namespace!
-#kubectl create -f /root/.pipelineai/cluster/yaml/.generated-users-kubeflow-pvc.yaml
-
 # TODO:  Create user-gcp-sa secret
 kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
+
+# Cloud-specific stuff
+# Install AWS CLI
+pip install awscli
+aws ecr get-login --region=us-west-2 --no-include-email | bash
+
+# Install GCP gcloud
+CLOUD_SDK_REPO="cloud-sdk-$(grep VERSION_CODENAME /etc/os-release | cut -d '=' -f 2)"
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+apt-get update && apt-get install -y google-cloud-sdk
+
+# Install APIs for TPUs (Optional)
+pip install --upgrade google-api-python-client
+pip install --upgrade oauth2client
+
+kubectl create secret generic docker-registry-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
+
+kubectl get namespace
+kubectl get storageclass
+kubectl get pods --all-namespaces
+kubectl get svc --all-namespaces
+kubectl get deploy --all-namespaces
+kubectl get pvc --all-namespaces
+kubectl get daemonset --all-namespaces
+kubectl get configmap --all-namespaces
+kubectl get secrets --all-namespaces
 
 # Nginx
 #apt-get install -y nginx
