@@ -80,7 +80,7 @@ mkdir -p /mnt/pipelineai/kubelet
 
 # PipelineAI CLI
 # NOTE:  WE NEED TO KEEP THIS UP HERE SINCE WE USE `pipeline` NEXT
-export PIPELINE_CLI_VERSION=1.5.325
+export PIPELINE_CLI_VERSION=1.5.327
 pip install cli-pipeline==$PIPELINE_CLI_VERSION --ignore-installed --no-cache --upgrade
 
 # PipelineAI Runtime
@@ -122,9 +122,7 @@ kubectl config set-context \
 
 # OpenEBS CRD/Operator and StorageClass
 kubectl create -f https://openebs.github.io/charts/openebs-operator-0.9.0.yaml
-
 sleep 5
-
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 sleep 5
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
@@ -134,8 +132,8 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 source ~/.bashrc
 
 # Install AWS CLI
-pip install awscli
-aws ecr get-login --region=us-west-2 --no-include-email | bash
+#pip install awscli
+#aws ecr get-login --region=us-west-2 --no-include-email | bash
 
 # Install GCP gcloud
 CLOUD_SDK_REPO="cloud-sdk-$(grep VERSION_CODENAME /etc/os-release | cut -d '=' -f 2)"
