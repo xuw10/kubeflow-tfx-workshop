@@ -168,11 +168,21 @@ pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=kub
 # Create kubeflow assets
 cd /root 
 git clone https://github.com/PipelineAI/kubeflow-tfx-workshop
-cd /root/kubeflow-tfx-workshop/install-kubeflow/
-kfctl apply all -V
 
-# TODO:  Create user-gcp-sa secret
-kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
+# Kfctl
+export KFAPP=install-kubeflow
+echo "export KFAPP=$KFAPP" >> /root/.bashrc
+echo "export KFAPP=$KFAPP" >> /etc/environment
+cd /root/kubeflow-tfx-workshop
+kfctl init --namespace=default --use_istio=true ${KFAPP}
+cd /root/kubeflow-tfx-workshop/install-kubeflow/
+kfctl generate all -V
+git checkout ks_app/components/params.libsonnet
+git checkout ks_app/vendor/kubeflow/argo/prototypes/argo.jsonnet
+git checkout ks_app/vendor/kubeflow/gcp/iap.libsonnet
+git checkout ks_app/vendor/kubeflow/pipeline/pipeline.libsonnet
+
+kfctl apply all -V
 
 # Cloud-specific stuff
 # Install AWS CLI
@@ -189,6 +199,9 @@ apt-get update && apt-get install -y google-cloud-sdk
 pip install --upgrade google-api-python-client
 pip install --upgrade oauth2client
 
+# TODO:  Create user-gcp-sa secret
+kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
+
 kubectl create secret generic docker-registry-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
 
 kubectl get namespace
@@ -200,6 +213,8 @@ kubectl get pvc --all-namespaces
 kubectl get daemonset --all-namespaces
 kubectl get configmap --all-namespaces
 kubectl get secrets --all-namespaces
+kubectl get gateway --all-namespaces
+kubectl get virtualservice --all-namespaces
 
 # Nginx
 #apt-get install -y nginx
