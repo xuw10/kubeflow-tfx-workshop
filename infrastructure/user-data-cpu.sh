@@ -147,6 +147,9 @@ pip install --upgrade oauth2client
 
 kubectl create secret generic docker-registry-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
 
+# Istio - Label the namespace
+kubectl label namespace kubeflow istio-injection=enabled
+
 kubectl get pods --all-namespaces
 kubectl get secrets --all-namespaces
 
@@ -198,21 +201,6 @@ kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user
 # Nginx (Restart for Good Measure)
 #service nginx start
 #service nginx restart
-
-# TODO:  Redis
-#kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-
-# TODO:  MySql
-#kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-
-# TODO:  Copy kubeflow-pipelines/ data to PVC (note:  this requirs that something is *bound* to the PVC, otherwise it's in Pending state!
-
-# TODO:  Istio - Label the namespace
-kubectl label namespace kubeflow istio-injection=enabled
-# TODO:  ADD THIS!
-#/root/.pipelineai/cluster/yaml/.generated-istio-crds.yaml
-#/root/.pipelineai/cluster/yaml/.generated-istio-noauth.yaml
-#/root/.pipelineai/cluster/yaml/.generated-virtualservice-grafana.yaml
 
 # Create.orig
 #export KFAPP=install-kubeflow
