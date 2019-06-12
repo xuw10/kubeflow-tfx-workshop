@@ -80,7 +80,9 @@ mkdir -p /mnt/pipelineai/kubelet
 
 # PipelineAI CLI
 # NOTE:  WE NEED TO KEEP THIS UP HERE SINCE WE USE `pipeline` NEXT
-export PIPELINE_CLI_VERSION=1.5.327
+export PIPELINE_CLI_VERSION=1.5.328
+echo "export PIPELINE_CLI_VERSION=$PIPELINE_CLI_VERSION" >> /root/.bashrc
+echo "export PIPELINE_CLI)VERSION=$PIPELINE_CLI_VERSION" >> /etc/environment
 pip install cli-pipeline==$PIPELINE_CLI_VERSION --ignore-installed --no-cache --upgrade
 
 # PipelineAI Runtime
@@ -97,6 +99,7 @@ sed -i '0,/\[Service\]/a Environment="KUBELET_EXTRA_ARGS=--root-dir=/mnt/pipelin
 systemctl daemon-reload
 systemctl restart kubelet
 
+# Note:  This command depends on the success of pipeline cluster-kube-install above!
 kubeadm init --config=/root/.pipelineai/cluster/config/kubeadm-init.yaml
 
 mkdir -p $HOME/.kube
@@ -161,8 +164,8 @@ tar -xzvf ks_${KSONNET_VERSION}_linux_amd64.tar.gz
 mv ks_${KSONNET_VERSION}_linux_amd64/ks /usr/bin/
 
 export KFCTL_VERSION=0.5.1
-echo "export KSONNET_VERSION=$KFCTL_VERSION" >> /root/.bashrc
-echo "export KSONNET_VERSION=$KFCTL_VERSION" >> /etc/environment
+echo "export KFCTL_VERSION=$KFCTL_VERSION" >> /root/.bashrc
+echo "export KFCTL_VERSION=$KFCTL_VERSION" >> /etc/environment
 wget https://github.com/kubeflow/kubeflow/releases/download/v${KFCTL_VERSION}/kfctl_v${KFCTL_VERSION}_linux.tar.gz
 tar -xzvf kfctl_v${KFCTL_VERSION}_linux.tar.gz
 mv kfctl /usr/bin/
