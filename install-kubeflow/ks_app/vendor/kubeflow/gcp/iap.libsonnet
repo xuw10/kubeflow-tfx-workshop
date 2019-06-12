@@ -175,7 +175,7 @@
         namespace: params.namespace,
       },
       spec: {
-        replicas: 3,
+        replicas: 1,
         template: {
           metadata: {
             labels: {

@@ -9,7 +9,7 @@
       ambassadorServiceType: 'NodePort',
       name: 'ambassador',
       platform: 'none',
-      replicas: 3,
+      replicas: 1,
     },
     argo: {
       artifactRepositoryAccessKeySecretKey: 'accesskey',
