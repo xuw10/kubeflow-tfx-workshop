@@ -167,7 +167,8 @@ tar -xzvf kfctl_v${KFCTL_VERSION}_linux.tar.gz
 mv kfctl /usr/bin/
 
 apt install -y jq
-export KF_PIPELINES_VERSION=$(curl --silent https://api.github.com/repos/kubeflow/pipelines/releases/latest | jq -r .tag_name)
+# $(curl --silent https://api.github.com/repos/kubeflow/pipelines/releases/latest | jq -r .tag_name)
+export KF_PIPELINES_VERSION=0.1.21
 echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /root/.bashrc
 echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /etc/environment
 pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VERSION}/kfp.tar.gz --upgrade --no-cache --ignore-installed
@@ -187,18 +188,18 @@ kfctl apply all -V
 kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
 
 # Nginx
-apt-get install -y nginx
+#apt-get install -y nginx
 
 # Nginx Config
-rm /etc/nginx/sites-available/default
-rm /etc/nginx/sites-enabled/default
-cd /etc/nginx/sites-available/ && ln -s /root/kubeflow-tfx-workshop/infrastructure/config/nginx/pipelineai-nginx.conf
-cd /etc/nginx/sites-enabled/ && ln -s /etc/nginx/sites-available/pipelineai-nginx.conf
-cd /root
+#rm /etc/nginx/sites-available/default
+#rm /etc/nginx/sites-enabled/default
+#cd /etc/nginx/sites-available/ && ln -s /root/kubeflow-tfx-workshop/infrastructure/config/nginx/pipelineai-nginx.conf
+#cd /etc/nginx/sites-enabled/ && ln -s /etc/nginx/sites-available/pipelineai-nginx.conf
+#cd /root
 
 # Nginx (Restart for Good Measure)
-service nginx start
-service nginx restart
+#service nginx start
+#service nginx restart
 
 # TODO:  Redis
 #kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
@@ -210,6 +211,7 @@ service nginx restart
 
 # TODO:  Istio - Label the namespace
 kubectl label namespace kubeflow istio-injection=enabled
+# TODO:  ADD THIS!
 #/root/.pipelineai/cluster/yaml/.generated-istio-crds.yaml
 #/root/.pipelineai/cluster/yaml/.generated-istio-noauth.yaml
 #/root/.pipelineai/cluster/yaml/.generated-virtualservice-grafana.yaml
