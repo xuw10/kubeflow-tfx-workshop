@@ -127,13 +127,13 @@ kubectl config set-context \
 
 # OpenEBS CRD/Operator and StorageClass
 kubectl create -f https://openebs.github.io/charts/openebs-operator-0.9.0.yaml
-sleep 10
+sleep 30
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-sleep 10
+sleep 30
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-sleep 10 
+sleep 30 
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
-sleep 10
+sleep 30
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 
 # Istio - Label the namespace
@@ -163,6 +163,11 @@ echo "export KF_PIPELINES_VERSION=$KF_PIPELINES_VERSION" >> /etc/environment
 pip install https://storage.googleapis.com/ml-pipeline/release/${KF_PIPELINES_VERSION}/kfp.tar.gz --upgrade --no-cache --ignore-installed
 
 # Install PipelineAI
+sleep 30
+kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+sleep 30
+kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+
 pipeline cluster-kube-install --tag $PIPELINE_VERSION --chip=cpu --namespace=kubeflow --image-registry-url=gcr.io/pipelineai2 --users-storage-gb=50Gi --ingress-type=nodeport --users-root-path=/mnt/pipelineai/users
 
 # Create kubeflow assets
@@ -181,6 +186,11 @@ git checkout ks_app/components/params.libsonnet
 git checkout ks_app/vendor/kubeflow/argo/prototypes/argo.jsonnet
 git checkout ks_app/vendor/kubeflow/gcp/iap.libsonnet
 git checkout ks_app/vendor/kubeflow/pipeline/pipeline.libsonnet
+
+sleep 30
+kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+sleep 30
+kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 
 kfctl apply all -V
 
