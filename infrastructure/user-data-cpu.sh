@@ -80,7 +80,7 @@ mkdir -p /mnt/pipelineai/kubelet
 
 # PipelineAI CLI
 # NOTE:  WE NEED TO KEEP THIS UP HERE SINCE WE USE `pipeline` NEXT
-export PIPELINE_CLI_VERSION=1.5.328
+export PIPELINE_CLI_VERSION=1.5.329
 echo "export PIPELINE_CLI_VERSION=$PIPELINE_CLI_VERSION" >> /root/.bashrc
 echo "export PIPELINE_CLI)VERSION=$PIPELINE_CLI_VERSION" >> /etc/environment
 pip install cli-pipeline==$PIPELINE_CLI_VERSION --ignore-installed --no-cache --upgrade
@@ -217,18 +217,15 @@ kubectl get gateway --all-namespaces
 kubectl get virtualservice --all-namespaces
 
 # Nginx
-#apt-get install -y nginx
-
-# Nginx Config
-#rm /etc/nginx/sites-available/default
-#rm /etc/nginx/sites-enabled/default
-#cd /etc/nginx/sites-available/ && ln -s /root/kubeflow-tfx-workshop/infrastructure/config/nginx/pipelineai-nginx.conf
-#cd /etc/nginx/sites-enabled/ && ln -s /etc/nginx/sites-available/pipelineai-nginx.conf
-#cd /root
-
-# Nginx (Restart for Good Measure)
-#service nginx start
-#service nginx restart
+apt-get install -y nginx
+rm /etc/nginx/sites-available/default
+rm /etc/nginx/sites-enabled/default
+cd /etc/nginx/sites-available/ && ln -s /root/kubeflow-tfx-workshop/infrastructure/config/nginx/pipelineai-nginx.conf
+cd /etc/nginx/sites-enabled/ && ln -s /etc/nginx/sites-available/pipelineai-nginx.conf
+cd /root
+# Restart for Good Measure
+service nginx start
+service nginx restart
 
 # Create.orig
 #export KFAPP=install-kubeflow
