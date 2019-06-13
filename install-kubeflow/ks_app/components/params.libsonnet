@@ -70,7 +70,7 @@
       disks: 'null',
       name: 'pytorch-operator',
       pytorchDefaultImage: 'null',
-      pytorchJobImage: 'gcr.io/kubeflow-images-public/pytorch-operator:v0.5.0',
+      pytorchJobImage: 'gcr.io/kubeflow-images-public/pytorch-operator:v0.5.1',
     },
     tensorboard: {
       defaultTbImage: 'tensorflow/tensorflow:1.8.0',
@@ -86,7 +86,7 @@
       deploymentScope: 'cluster',
       name: 'tf-job-operator',
       tfDefaultImage: 'null',
-      tfJobImage: 'gcr.io/kubeflow-images-public/tf_operator:v0.5.0',
+      tfJobImage: 'gcr.io/kubeflow-images-public/tf_operator:v0.5.3',
       tfJobUiServiceType: 'ClusterIP',
     },
   },
