@@ -227,6 +227,11 @@ cd /root
 service nginx start
 service nginx restart
 
+sleep 30
+kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+sleep 30
+kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+
 # Create.orig
 #export KFAPP=install-kubeflow
 #echo "export KFAPP=$KFAPP" >> /root/.bashrc
