@@ -242,6 +242,15 @@ kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass
 sleep 30
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 
+# Copy data to airflow
+#apt-get install -y jq
+#users_pvc_dir=$(kubectl get pvc users-pvc -o json | jq .spec.volumeName | sed -e 's/^"//' -e 's/"$//')
+#users_pvc_dir=/mnt/pipelineai/users/${users_pvc_dir}
+#echo ${users_pvc_dir}
+#ls -al ${users_pvc_dir}
+#cp -R /root/kubeflow-tfx-workshop/airflow-dags ${users_pvc_dir}
+#ls -al ${users_pvc_dir}
+
 # Create.orig
 #export KFAPP=install-kubeflow
 #echo "export KFAPP=$KFAPP" >> /root/.bashrc
