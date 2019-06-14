@@ -214,18 +214,6 @@ kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user
 
 kubectl create secret generic docker-registry-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
 
-kubectl get namespace
-kubectl get storageclass
-kubectl get pods --all-namespaces
-kubectl get svc --all-namespaces
-kubectl get deploy --all-namespaces
-kubectl get pvc --all-namespaces
-kubectl get daemonset --all-namespaces
-kubectl get configmap --all-namespaces
-kubectl get secrets --all-namespaces
-kubectl get gateway --all-namespaces
-kubectl get virtualservice --all-namespaces
-
 # Nginx
 apt-get install -y nginx
 rm /etc/nginx/sites-available/default
@@ -241,6 +229,24 @@ sleep 30
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
 sleep 30
 kubectl create -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
+
+# Install update TFJob CRD (tfjobs.kubeflow.org)
+kubectl delete -f /root/kubeflow-tfx-workshop/infrastructure/crd/tfjob-crd-v1.yaml
+sleep 5
+kubectl create -f /root/kubeflow-tfx-workshop/infrastructure/crd/tfjob-crd-v1.yaml
+
+kubectl get namespace
+kubectl get storageclass
+kubectl get pods --all-namespaces
+kubectl get svc --all-namespaces
+kubectl get deploy --all-namespaces
+kubectl get pvc --all-namespaces
+kubectl get daemonset --all-namespaces
+kubectl get configmap --all-namespaces
+kubectl get secrets --all-namespaces
+kubectl get gateway --all-namespaces
+kubectl get virtualservice --all-namespaces
+kubectl get crd --all-namespaces
 
 # Copy data to airflow
 #apt-get install -y jq

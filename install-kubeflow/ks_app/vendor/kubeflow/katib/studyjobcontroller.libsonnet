@@ -18,7 +18,7 @@
       spec: {
         group: "kubeflow.org",
         scope: "Namespaced",
-        version: "v1alpha1",
+        version: "v1alpha2",
         names: {
           kind: "StudyJob",
           singular: "studyjob",
@@ -35,6 +35,18 @@
             name: "Age",
             type: "date",
           },
+        ],
+        versions: [
+          {
+             name: "v1alpha2",
+             served: true,
+             storage: true,
+          },
+          {
+             name: "v1alpha1",
+             served: true,
+             storage: false,
+          }
         ],
       },
     }],

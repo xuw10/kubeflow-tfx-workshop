@@ -49,11 +49,11 @@ spawnerFormDefaults:
     readOnly: false
   cpu:
     # CPU for user's Notebook
-    value: '0.5'
+    value: '4.0'
     # readOnly: true
   memory:
     # Memory for user's Notebook
-    value: 1.0Gi
+    value: 24.0Gi
   workspaceVolume:
     # Workspace Volume to be attached to user's Notebook
     # Each Workspace Volume is declared with the following attributes:
@@ -62,7 +62,7 @@ spawnerFormDefaults:
       type:
         # The Type of the Workspace Volume
         # Supported values: 'New', 'Existing'
-        value: New
+        value: New 
       name:
         # The Name of the Workspace Volume
         # Note that this is a templated value
@@ -70,7 +70,7 @@ spawnerFormDefaults:
         value: {username}-workspace
       size:
         # The Size of the Workspace Volume (in Gi)
-        value: '10'
+        value: '100'
       mountPath:
         # The Path that the Workspace Volume will be mounted
         readOnly: true
@@ -81,23 +81,23 @@ spawnerFormDefaults:
         value: ReadWriteOnce
   dataVolumes:
     # List of additional Data Volumes to be attached to the user's Notebook
-    value: []
+    #value: []
     # Each Data Volume is declared with the following attributes:
     # Type, Name, Size, MountPath and Access Mode
     #
     # For example, a list with 2 Data Volumes:
-    #value:
-    #  - value:
-    #      type:
-    #        value: New
-    #      name:
-    #        value: {username}-vol-1
+    value:
+      - value:
+          type:
+           value: Existing
+          name:
+            value: users-pvc
     #      size:
     #        value: '10'
-    #      mountPath:
-    #        value: /home/jovyan/{username}-vol-1
-    #      accessModes:
-    #        value: ReadWriteOnce
+          mountPath:
+            value: /mnt/pipelineai/users
+          accessModes:
+            value: ReadWriteOnce
     #  - value:
     #      type:
     #        value: New

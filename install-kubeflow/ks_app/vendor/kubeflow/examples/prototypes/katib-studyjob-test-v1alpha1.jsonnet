@@ -1,5 +1,5 @@
 // @apiVersion 0.1
-// @name io.ksonnet.pkg.katib-studyjob-test-v1alpha1
+// @name io.ksonnet.pkg.katib-studyjob-test-v1alpha2
 // @description katib-studyjob-test
 // @shortDescription A Katib StudyJob using random suggestion
 // @param name string Name for the job.
@@ -10,7 +10,7 @@ local name = params.name;
 local namespace = env.namespace;
 
 local studyjob = {
-  apiVersion: "kubeflow.org/v1alpha1",
+  apiVersion: "kubeflow.org/v1alpha2",
   kind: "StudyJob",
   metadata: {
     name: name,
