@@ -209,8 +209,10 @@ apt-get update && apt-get install -y google-cloud-sdk
 pip install --upgrade google-api-python-client
 pip install --upgrade oauth2client
 
-# TODO:  Create user-gcp-sa secret
-kubectl create secret generic --namespace=kubeflow  user-gcp-sa --from-file=user-gcp-sa.json=/root/kubeflow-tfx-workshop/infrastructure/config/gcp/user-gcp-sa-secret-key.json
+# Create user-gcp-sa secret
+cd /root
+wget https://s3.amazonaws.com/fluxcapacitor.com/kubeflow-workshop/user-gcp-sa-secret-key.json
+kubectl create secret generic --namespace=kubeflow user-gcp-sa --from-file=user-gcp-sa.json=/root/user-gcp-sa-secret-key.json
 
 kubectl create secret generic docker-registry-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
 
