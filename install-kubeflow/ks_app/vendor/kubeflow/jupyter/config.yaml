@@ -46,14 +46,15 @@ spawnerFormDefaults:
 #      - gcr.io/kubeflow-images-public/tensorflow-2.0.0a-notebook-gpu:v0.5.0
     # By default, custom container Images are allowed
     # Uncomment the following line to only enable standard container Images
-    readOnly: false
+    readOnly: true 
   cpu:
     # CPU for user's Notebook
     value: '4.0'
-    # readOnly: true
+    readOnly: true
   memory:
     # Memory for user's Notebook
     value: 24.0Gi
+    readOnly: true
   workspaceVolume:
     # Workspace Volume to be attached to user's Notebook
     # Each Workspace Volume is declared with the following attributes:
@@ -111,7 +112,7 @@ spawnerFormDefaults:
     #        value: ReadWriteOnce
     #
     # Uncomment the following line to make the Data Volumes list readonly
-    #readOnly: true
+    readOnly: true
   extraResources:
     # Extra Resource Limits for user's Notebook
     # Note that braces are escaped
