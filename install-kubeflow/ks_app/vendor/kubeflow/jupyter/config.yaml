@@ -46,7 +46,7 @@ spawnerFormDefaults:
 #      - gcr.io/kubeflow-images-public/tensorflow-2.0.0a-notebook-gpu:v0.5.0
     # By default, custom container Images are allowed
     # Uncomment the following line to only enable standard container Images
-    readOnly: true 
+#    readOnly: true 
   cpu:
     # CPU for user's Notebook
     value: '4.0'
