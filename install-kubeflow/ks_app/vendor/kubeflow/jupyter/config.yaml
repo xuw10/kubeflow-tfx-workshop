@@ -72,14 +72,16 @@ spawnerFormDefaults:
       size:
         # The Size of the Workspace Volume (in Gi)
         value: '100'
+        readOnly: true
       mountPath:
         # The Path that the Workspace Volume will be mounted
-        readOnly: true
         value: /home/jovyan
+        readOnly: true
       accessModes:
         # The Access Mode of the Workspace Volume
         # Supported values: 'ReadWriteOnce', 'ReadWriteMany', 'ReadOnlyMany'
         value: ReadWriteOnce
+        readOnly: true
   dataVolumes:
     # List of additional Data Volumes to be attached to the user's Notebook
     #value: []
@@ -91,14 +93,19 @@ spawnerFormDefaults:
       - value:
           type:
            value: Existing
+           readOnly: true
           name:
             value: users-pvc
+            readOnly: true
     #      size:
     #        value: '10'
+    #        readOnly: true
           mountPath:
             value: /mnt/pipelineai/users
+            readOnly: true
           accessModes:
             value: ReadWriteOnce
+            readOnly: true
     #  - value:
     #      type:
     #        value: New
@@ -117,3 +124,4 @@ spawnerFormDefaults:
     # Extra Resource Limits for user's Notebook
     # Note that braces are escaped
     value: "{{}}"
+    readOnly: true
