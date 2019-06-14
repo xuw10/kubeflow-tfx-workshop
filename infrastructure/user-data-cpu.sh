@@ -182,10 +182,8 @@ cd /root/kubeflow-tfx-workshop
 kfctl init --namespace=default --use_istio=true ${KFAPP}
 cd /root/kubeflow-tfx-workshop/install-kubeflow/
 kfctl generate all -V
-git checkout ks_app/components/params.libsonnet
-git checkout ks_app/vendor/kubeflow/argo/prototypes/argo.jsonnet
-git checkout ks_app/vendor/kubeflow/gcp/iap.libsonnet
-git checkout ks_app/vendor/kubeflow/pipeline/pipeline.libsonnet
+git checkout /root/kubeflow-tfx-workshop/install-kubeflow/ks_app/components/
+git checkout /root/kubeflow-tfx-workshop/install-kubeflow/ks_app/vendor/
 
 sleep 30
 kubectl delete -f /root/.pipelineai/cluster/yaml/.generated-openebs-storageclass.yaml
